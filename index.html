@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de Investimentos</title>
+</head>
+<body>
+    <body>
+        
+        <div class="container">
+            <h2>Simulador de Investimentos</h2>
+            <p>Simule seus rendimentos de renda fixa </p>
+            <form id="simuladorForm">
+              <div>
+                <label for="primeiroAport">Primeiro Aporte Inicial (R$):</label>
+                <input type="number" id="primeiroAport" placeholder="Ex: 10000" required>
+              </div>
+              <div>
+                <label for="aportMensal">Valor do Aporte Mensal (R$):</label>
+                <input type="number" id="aportMensal" placeholder="Ex: 1000" required>
+              </div>
+              <div>
+                <label for="taxaCdiAnual">Taxa CDI Anual (%):</label>
+                <input type="number" id="taxaCdiAnual" placeholder="Ex: 12" required>
+              </div>
+              <div>
+                <label for="anos">Por quantos anos deseja investir?</label>
+                <input type="number" id="anos" placeholder="Ex: 5" required>
+              </div>
+              <button type="button" onclick="calcularRendimentos()">Calcular</button>
+            </form>
+            <div class="results" id="results"></div>
+          </div>
+          <footer>
+            <div>
+                Em breve serão possiveis
+            </div>
+          </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+   /* Estilos Gerais */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  /* Container Principal */
+  .container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  /* Título */
+  h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  /* Formulário */
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+  }
+
+  form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  form input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  .full-width {
+    grid-column: span 2;
+  }
+
+  /* Botão */
+  button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    grid-column: span 2;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+  /* Resultados */
+  .results {
+    margin-top: 20px;
+  }
+
+  .alert {
+    background: #e7f3ff;
+    border: 1px solid #b3d4fc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #0056b3;
+  }
+
+  .list-group {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .list-group-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+  }
+
+  .list-group-item strong {
+    color: #007bff;
+  }
+
+  /* Estilos de Colapso */
+  .collapse {
+    display: none;
+  }
+
+  .collapse.show {
+    display: block;
+  }
+
+  .collapse-toggle {
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px 0;
+    transition: background 0.3s ease;
+  }
+
+  .collapse-toggle:hover {
+    background: #0056b3;
+  }
