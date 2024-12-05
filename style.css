@@ -1,4 +1,4 @@
-   /* Estilos Gerais */
+  
    * {
     margin: 0;
     padding: 0;
@@ -19,25 +19,26 @@
 
   /* Container Principal */
   .container {
-    background: #fff;
+    background: #333;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 600px;
     width: 100%;
+    margin-top: 9rem;
   }
 
   /* Título */
   h2 {
     text-align: center;
-    color: #007bff;
+    color: #AD00CE;
     margin-bottom: 10px;
   }
 
   p {
     text-align: center;
     margin-bottom: 20px;
-    color: #555;
+    color: #ddd;
   }
 
   /* Formulário */
@@ -51,7 +52,7 @@
     font-size: 14px;
     margin-bottom: 5px;
     display: block;
-    color: #555;
+    color: #ddd;
   }
 
   form input {
@@ -63,7 +64,7 @@
 
   form input:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #AD00CE;
   }
 
   .full-width {
@@ -74,7 +75,7 @@
   button {
     padding: 10px;
     border: none;
-    background: #007bff;
+    background: #AD00CE;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -83,7 +84,7 @@
   }
 
   button:hover {
-    background: #0056b3;
+    background: #AD00CE;
   }
 
   /* Resultados */
@@ -92,12 +93,12 @@
   }
 
   .alert {
-    background: #e7f3ff;
-    border: 1px solid #b3d4fc;
+    background: #AD00CE;
+    border: 1px solid #333;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 10px;
-    color: #0056b3;
+    color: #AD00CE;
   }
 
   .list-group {
@@ -105,17 +106,19 @@
     padding: 0;
     margin: 10px 0;
   }
-
+  .list-group-string{
+    color: #fff;
+  }
   .list-group-item {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #AD00CE;
     border-radius: 5px;
     margin-bottom: 10px;
-    background: #f9f9f9;
+    background: #AD00CE;
   }
 
   .list-group-item strong {
-    color: #007bff;
+    color: #ffffff;
   }
 
   /* Estilos de Colapso */
@@ -129,7 +132,7 @@
 
   .collapse-toggle {
     cursor: pointer;
-    background: #007bff;
+    background: #AD00CE;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -139,5 +142,5 @@
   }
 
   .collapse-toggle:hover {
-    background: #0056b3;
+    background: #AD00CE;
   }
