@@ -27,13 +27,13 @@ function calcularRendimentos() {
       return true;
     }
     
-
+   
     const taxaCdiMensal = taxaCdiAnual / 12;
     let saldoAcumulado = primeiroAport;
     let rendimentoAnual = 0;
     let totalInvestido = primeiroAport;
     let detalhes = `<h5>Detalhamento Anual</h5>`;
-
+    //exibição do detalhamentos
     for (let ano = 1; ano <= anos; ano++) {
       detalhes += `
         <div>
@@ -41,8 +41,8 @@ function calcularRendimentos() {
             Ano ${ano}
           </div>
           <div id="ano-${ano}" class="collapse">
-            <ul class="list-group">
-      `;
+            <ul class="list-group">`;
+
       for (let mes = 1; mes <= 12; mes++) {
         const rendimentoMensal = saldoAcumulado * taxaCdiMensal;
         saldoAcumulado += rendimentoMensal + (ano > 1 || mes > 1 ? aportMensal : 0);
@@ -51,14 +51,10 @@ function calcularRendimentos() {
         detalhes += `
           <li class="list-group-item" style="color:#fff" >
             Mês ${mes}: Rendimento = <strong>R$${rendimentoMensal.toFixed(2)}</strong> | Saldo = <strong>R$${saldoAcumulado.toFixed(2)}</strong>
-          </li>
-        `;
+          </li>`;
+          
       }
-      detalhes += `
-            </ul>
-          </div>
-        </div>
-      `;
+      detalhes += `</ul></div></div>`;
     }
 
     const formatoReal = valor => valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -69,8 +65,7 @@ function calcularRendimentos() {
         <p><strong>Saldo Final:</strong> ${formatoReal(saldoAcumulado)}</p>
         <p><strong>Rendimento Total:</strong> ${formatoReal(rendimentoAnual)}</p>
       </div>
-      ${detalhes}
-    `;
+      ${detalhes}`;
   }
 
   function toggleCollapse(id) {
